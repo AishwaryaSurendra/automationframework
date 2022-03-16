@@ -34,7 +34,7 @@ public class LoginTest extends Testbase {
 	  takescreenshot.Getscreenshot(driver,"emailpage");
 	  reg.create();
 	  reg.createanaccount();
-	  takescreenshot.Getscreenshot(driver,"createaccount");
+	 // takescreenshot.Getscreenshot(driver,"createaccount");
 
 	  
   }

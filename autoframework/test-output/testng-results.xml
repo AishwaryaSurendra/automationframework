@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-14T12:31:41Z" name="Default suite" finished-at="2022-03-14T12:31:59Z" duration-ms="17650">
+  <suite started-at="2022-03-15T12:14:24Z" name="Default suite" finished-at="2022-03-15T12:14:25Z" duration-ms="114">
     <groups>
     </groups>
-    <test started-at="2022-03-14T12:31:41Z" name="Default test" finished-at="2022-03-14T12:31:59Z" duration-ms="17650">
+    <test started-at="2022-03-15T12:14:24Z" name="Default test" finished-at="2022-03-15T12:14:25Z" duration-ms="114">
       <class name="com.crm.test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.test.LoginTest@770d3326]" started-at="2022-03-14T12:31:41Z" name="setup" finished-at="2022-03-14T12:31:58Z" duration-ms="16744" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createaccount()[pri:2, instance:com.crm.test.LoginTest@770d3326]" started-at="2022-03-14T12:31:58Z" name="createaccount" finished-at="2022-03-14T12:31:59Z" duration-ms="866" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.test.LoginTest@4a83a74a]" started-at="2022-03-15T12:14:24Z" name="setup" finished-at="2022-03-15T12:14:25Z" duration-ms="67" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[\autoframework\src\main\resources\imghomepage18158.png (The system cannot find the path specified)]]>
+              <![CDATA[The driver executable does not exist: D:\Selenium\chromedriver_99\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: \autoframework\src\main\resources\imghomepage18158.png (The system cannot find the path specified)
-at java.base/java.io.FileOutputStream.open0(Native Method)
-at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-at com.google.common.io.Files$FileByteSink.openStream(Files.java:192)
-at com.google.common.io.Files$FileByteSink.openStream(Files.java:180)
-at com.google.common.io.ByteSource.copyTo(ByteSource.java:268)
-at com.google.common.io.Files.copy(Files.java:319)
-at com.crm.util.takescreenshot.Getscreenshot(takescreenshot.java:24)
-at com.crm.test.LoginTest.createaccount(LoginTest.java:31)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Selenium\chromedriver_99\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.crm.base.Testbase.initialization(Testbase.java:20)
+at com.crm.test.LoginTest.setup(LoginTest.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -54,11 +54,62 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createaccount()[pri:2, instance:com.crm.test.LoginTest@4a83a74a]" started-at="2022-03-15T12:14:25Z" name="createaccount" finished-at="2022-03-15T12:14:25Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: D:\Selenium\chromedriver_99\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Selenium\chromedriver_99\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.crm.base.Testbase.initialization(Testbase.java:20)
+at com.crm.test.LoginTest.setup(LoginTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createaccount -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.test.LoginTest@770d3326]" started-at="2022-03-14T12:31:59Z" name="close" finished-at="2022-03-14T12:31:59Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.crm.test.LoginTest@4a83a74a]" started-at="2022-03-15T12:14:25Z" name="close" finished-at="2022-03-15T12:14:25Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
