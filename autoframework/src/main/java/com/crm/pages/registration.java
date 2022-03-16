@@ -9,7 +9,7 @@ import com.crm.base.Testbase;
 
 public class registration extends Testbase {
 	
-	// Page Factory - object respository 
+	// Page Factory - object respositories
 	@FindBy(xpath="//a[@class='login']")
 	WebElement signin;
 	
